@@ -1,4 +1,5 @@
 # admin_dashboard
+Admin dashboard with vanilla Javascript and  Firebase (CSS & HTML too)
 To try this simple web app you have to create a firebase proyect, don't worry, is easy!
 The next step is to create a firestore project, with a collection called posts.
 After that, create a storage project with a folder called "images" and another folder called "postImages" into it
