@@ -7,6 +7,9 @@ Lastly set the firebase config:
   - go to your firebase project, firebase console/settings/project settings/service accounts
   - copy and replace the firebase config on db.js with your config, don't forget your storage bucket
 
+Dependencies: 
+  - vite.js
+  - firebase admin SDK
 Docs:
 Firebase Firestore: https://firebase.google.com/docs/firestore/quickstart?hl=es-419#web-modular-api
 Firebase Storage: https://firebase.google.com/docs/storage/web/start?hl=es-419 //how to get the storage bucket for the config*
