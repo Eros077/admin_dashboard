@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="hed">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="src/styles/dashboard/header.css">
+    <link rel="stylesheet" href="src/styles/general.css">
+    <link rel="stylesheet" href="src/styles/helpers/pop_up.css">
+    <link rel="stylesheet" href="src/styles/helpers/cards&postContainer.css">
+    <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Sans+Symbols&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Tangerine&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="headerContentTop">
+            <h2>Dashboard</h2>
+            <a href="" title="Ayuda" ><img src="src/img/🦆 icon _question bold_.png" alt="help" class="help"></a>
+        </div>
+        <ul class="main-nav">
+            <li class="navSec" id="create">Crear</li><!-- un formulario -->
+            <li class="navSec" id="showSinglePost">Buscar post</li><!-- se puede borrar o actualizar desde la visualizacion del perfil con botones -->
+            <li class="navSec" id="showPosts">Mis posts</li><!-- un tab que muestre varios y los vaya cargando a medida que bajamos -->
+        </ul>
+    </header>
+    <main id="main-container">
+        
+    </main>
+    <style>
+        #main-container{
+            max-height: 750px;
+        }
+    </style>
+</body>
+<script type="module" src="src/scripts/dashboard/index.js"></script>
+</html>

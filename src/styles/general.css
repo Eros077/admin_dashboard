@@ -1,0 +1,44 @@
+*{
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+body::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 4px;
+}
+h1{
+    font-family: 'Tangerine', cursive;
+}
+h2{
+    color: rgba(0, 0, 0, 0.822);
+    size: 40px;
+}
+.button{
+    width: 150px;
+    height: 30px;
+
+    background-color: white;
+
+    border: 1px solid rgba(102, 102, 102, 0.534);
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+input{
+    outline: none;
+    font-size: large;
+    border-radius: 40px;
+    border: 2px solid rgba(102, 102, 102, 0.281);
+    transition: 0.3s ease;
+}
+input.is-active{
+    border-color: rgb(86, 201, 153);
+}
+

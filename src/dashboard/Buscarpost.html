@@ -1,0 +1,53 @@
+<div class="top-container">
+    <h2>Busca un post</h2>
+    <form class="buscador-container"  id="buscador-container">
+        <input type="text" placeholder="Busca un post específico" id="buscador">
+        <div id="buscar-div"><img src="../../src/img//🦆 icon _magnifying glass bold_.png" alt="lupa" id="buscar"></div>
+    </form>
+</div>
+<div id="post-container" class="post-container">
+
+</div>
+<style>
+    .top-container{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top-container{
+        animation:scale-up-center 0.8s; 
+    } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+    .top-container img{
+        height: 15px;
+        width: 15px;
+    }
+    .buscador-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+    }
+    #buscador{
+        width: 60%;
+    }
+    .buscador-container div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 5px;
+        width: 20px;
+        height: 20px;
+        
+        border-radius: 100px;
+        
+        background-color: rgba(194, 194, 194, 0);
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .buscador-container div:hover{
+        background-color: rgb(194, 194, 194);
+    }
+</style>

@@ -1,0 +1,86 @@
+.dark-background{
+    height: 100%;
+    width: 100%;
+
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.459);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop-up{
+    background-color: whitesmoke;
+    min-width: 200px;
+
+    display: flex;
+    flex-flow: column;
+    border-radius: 4px;
+}
+.pop-up{
+    animation:scale-up-center 0.8s; 
+} @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+
+.pop-up.is-edit{
+    background-color: whitesmoke;
+    max-width: 95%;
+    min-width: 200px;
+    max-height: 800px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-flow: column;
+}
+.pop-up::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 4px;
+}
+.pop-up::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 4px;
+}
+.close-cross{
+    width: 27px;
+    height: 27px;
+    
+    align-self: flex-end;
+    margin-right: 5px;
+    margin-top: 5px;
+    position: fixed;
+
+    background-color: rgba(128, 128, 128, 0);
+    border-radius: 20px;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+.close-cross:hover{
+    background-color: rgb(163, 163, 163);
+}
+.pop-content{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    margin: 25px;
+    margin-top: 35px;
+}
+/*------ formulario edit: */
+.update-form{/* this is the form container, not the form itselft */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.original-pic{
+    max-height: 300px;
+    min-width: 200px;
+    width:100%;
+}
+
+@media only screen and (min-width:600px){
+    .pop-up.is-edit{
+        min-width: 70%;
+    }
+}
